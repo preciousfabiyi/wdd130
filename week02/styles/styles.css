@@ -22,7 +22,8 @@ img {
 }
 
 p {
-  padding: 0;  /* keep only one version */
+  margin: 10px 0;
+  line-height: 1.6; /* makes text easier to read */
 }
 
 main{
