@@ -22,7 +22,7 @@ img {
 }
 
 p {
-  padding: 10px;  /* keep only one version */
+  padding: 0;  /* keep only one version */
 }
 
 main{
