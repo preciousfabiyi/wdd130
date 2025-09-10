@@ -22,9 +22,9 @@ img {
 }
 
  p {
-  margin: 10px 0;
+  padding: 10px 0;
   line-height: 1.6; /* easier to read */
-  padding: 0;
+  
 }
   
 main{
