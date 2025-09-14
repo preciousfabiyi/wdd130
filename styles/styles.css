@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: darkblue;
   --secondary-color: steelblue;
@@ -82,4 +88,22 @@ footer {
     max-width: 300px; /* keeps it from getting too big */
 }
 
+/* Class Selectors */
+
+.box{margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+
+}
+main img {
+  /* you most likely will have other CSS declarations here */
+  float: right;
+}
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
 
