@@ -71,20 +71,20 @@ nav, p, section, article {
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   border-radius: 8px;
 }
-
-.history, .adventureawaityou {
+section {
+  max-width: 600px;          /* keeps text from stretching too wide */
+  margin: 2rem auto;         /* centers horizontally */
+  padding: 1.5rem;
   background-color: var(--secondary-color); /* warm sand background */
-  text-align: center; /* center text horizontally */
-  margin: 20px auto; /* space around the sections */
-  padding: 20px; /* space inside the box */
-  border-radius: 10px; /* rounded corners */
-  max-width: 700px; /* keeps content narrow and centered */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  border-radius: 10px;       /* rounded corners */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); /* soft shadow for depth */
+  text-align: center;        /* centers text inside */
+}
+.history {
+  background-color: var(--accent2-color); /* golden yellow */
 }
 
-.history h2, .adventureawaityou h2 {
-  color: var(--accent1-color);
-  margin-bottom: 10px;
+.adventure {
+  background-color: var(--secondary-color); /* warm sand */
 }
-
 
