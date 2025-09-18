@@ -49,15 +49,12 @@ main{
     max-width: 840px;
 }
 
-aside {
+  aside {
   width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
   text-align: center;
+  color: var(--text-color);
 }
+
 
 aside img {
   width: 200px;
@@ -67,6 +64,8 @@ aside img {
 main img {
   width: 150px;
   height: auto;
+  float :right;
+  margin : 0 0 1rem 1rem; /* spacing between text and image */
 }
 
 
@@ -101,9 +100,9 @@ main img {
   /* you most likely will have other CSS declarations here */
   float: right;
 }
-aside h2 {
+
+  aside h2 {
   position: absolute;
   top: 47px;
   left: 150px;
 }
-
