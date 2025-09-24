@@ -219,3 +219,12 @@ footer .socialmedia img {
   width: 30px;
   height: 30px;
 }
+.history {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--accent2-color);
+  text-align: center;
+}
+
