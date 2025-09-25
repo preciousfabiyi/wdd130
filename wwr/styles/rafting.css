@@ -230,7 +230,7 @@ footer .socialmedia img {
 .history {
   display: flex;
   justify-content: space-between; /* space between text + image */
-  align-items: center;            /* vertically align */
+  align-items: center;            /* horizontal align */
   max-width: 900px;
   margin: 2rem auto;
   gap: 1rem;                      /* small spacing between items */
