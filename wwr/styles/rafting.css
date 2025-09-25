@@ -227,4 +227,23 @@ footer .socialmedia img {
   background-color: var(--accent2-color);
   text-align: center;
 }
+.history {
+  display: flex;
+  justify-content: space-between; /* space between text + image */
+  align-items: center;            /* vertically align */
+  max-width: 900px;
+  margin: 2rem auto;
+  gap: 1rem;                      /* small spacing between items */
+}
 
+.history-text {
+  flex: 1;                        /* each text box takes equal width */
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.history-image img {
+  max-width: 180px;   /* make image smaller */
+  height: auto;
+  border-radius: 6px; /* optional rounded corners */
+}
