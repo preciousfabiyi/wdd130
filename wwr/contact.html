@@ -41,17 +41,23 @@
             </div>
 
 
-            <form>
+            <form action="#" method="post">
                 <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <input type="radio" id="general" name="purpose" value="general">
+                    <label for="general">General Inquiry</label><br>
 
-                <p>Message Purpose</p>
-                <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
