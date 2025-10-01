@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Whitewater Rafting Co.</title>
+    <meta name="description" content="Contact Whitewater Rafting Co. for inquiries, reservations, or suggestions.">
+    <meta name="author" content="Precious Fabiyi">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/raftinglogo.jpg" alt="Whitewater Rafting Co. Logo" width="150">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Company Information -->
+        <section class="company-info">
+            <h1>Contact Us</h1>
+            <p><strong>Address:</strong> 123 River Rapids Rd, Adventure City, CO 80401</p>
+            <p><strong>Phone:</strong> +1 (800) 555-RAFT</p>
+            <p><strong>Email:</strong> info@whitewaterraftingco.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.768...etc" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Employee Profiles -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employe1.jpeg" alt="John - Lead Guide">
+                    <figcaption>John Smith — Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employe2.jpeg" alt="David- Safety Coordinator">
+                    <figcaption>Maria Garcia — Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employe3.jpeg" alt="Precious - Reservations Manager">
+                    <figcaption>David Lee — Reservations Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+                    <p>Purpose of Message:</p>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                    </label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Whitewater Rafting Co. | Precious Fabiyi | WDD 130</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebooklogo.jpeg" alt="Facebook Icon" width="40">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.jpeg" alt="LinkedIn Icon" width="40">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpeg" alt="Instagram Icon" width="40">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
