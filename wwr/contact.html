@@ -1,108 +1,91 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Whitewater Rafting Co.</title>
-    <meta name="description" content="Contact Whitewater Rafting Co. for inquiries, reservations, or suggestions.">
-    <meta name="author" content="Precious Fabiyi">
+    <title>Contact Us - White Water Rafting</title>
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
     <header>
-        <img src="images/raftinglogo.jpg" alt="Whitewater Rafting Co. Logo" width="150">
+        <img src="images/logo.png" alt="Rafting Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <!-- Company Information -->
         <section class="company-info">
-            <h1>Contact Us</h1>
-            <p><strong>Address:</strong> 123 River Rapids Rd, Adventure City, CO 80401</p>
-            <p><strong>Phone:</strong> +1 (800) 555-RAFT</p>
-            <p><strong>Email:</strong> info@whitewaterraftingco.com</p>
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+        </section>
+
+        <section class="contact-grid">
             <div class="map">
+                <!-- Google Maps Embed -->
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1234567890123!2d-105.1234567!3d39.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876abcd123456789%3A0xabcdef1234567890!2s123%20River%20Rapids%20Rd%2C%20Adventure%20City%2C%20CO%2080401!5e0!3m2!1sen!2sus!4v1699999999999"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2492767594323!2d-122.419415!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5f0f0f0f%3A0xdeadbeef!2s123%20Main%20River%20St!5e0!3m2!1sen!2sus!4v1700000000000"
+                    width="100%" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
 
-        <!-- Employee Profiles -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-            <div class="employee-gallery">
-                <figure>
-                    <img src="images/employe1.jpeg" alt="John - Lead Guide " width="200">
-                    <figcaption>John Smith — Lead Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employe2.jpeg" alt="David- Safety Coordinator" width="200">
-                    <figcaption>Maria Garcia — Safety Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employe3.jpg" alt="Precious - Reservations Manager" width="200">
-                    <figcaption>David Lee — Reservations Manager</figcaption>
-                </figure>
-            </div>
-        </section>
+            <div class="form-box">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-                <fieldset>
-                    <legend>Your Information</legend>
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Message Details</legend>
-                    <p>Purpose of Message:</p>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <p>Message Purpose</p>
+                    <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
                     <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
 
-                    <label>
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-                    </label>
-                </fieldset>
+                    <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly
+                        newsletter</label>
 
-                <button type="submit">Send Message</button>
-            </form>
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="profiles">
+                <figure>
+                    <img src="images/employe1.jpeg" alt="Employee 1">
+                    <figcaption>John Doe – Tour Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employe2.jpeg" alt="Employee 2">
+                    <figcaption>Jane Smith – Customer Support</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employe3.jpg" alt="Employee 3">
+                    <figcaption>Precious Johnson – Safety Instructor</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Whitewater Rafting Co. | Precious Fabiyi | WDD 130</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebooklogo.jpeg" alt="Facebook Icon" width="40">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.jpeg" alt="LinkedIn Icon" width="40">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpeg" alt="Instagram Icon" width="40">
-            </a>
-        </nav>
+        <p>©2025 White Water Rafting Company</p>
+        <div class="social">
+            <a href="#"><img src="images/facebooklogo.jpeg" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedin.jpeg" alt="linkedin"></a>
+            <a href="#"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 
