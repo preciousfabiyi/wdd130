@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <meta name="description" content="An online quiz about HTML and CSS for WDD130 assignment.">
+    <meta name="author" content="Precious Fabiyi">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML & CSS Online Quiz</h1>
+        <p>Test your knowledge of HTML and CSS concepts!</p>
+    </header>
+
+    <main>
+        <form>
+            <!-- Question 1 -->
+            <fieldset>
+                <legend>Question 1</legend>
+                <label for="q1">What does HTML stand for?</label>
+                <input type="text" id="q1" name="q1" placeholder="Enter your answer">
+            </fieldset>
+
+            <!-- Question 2 -->
+            <fieldset>
+                <legend>Question 2</legend>
+                <label for="q2">Explain the difference between inline CSS and external CSS:</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Write your short answer here"></textarea>
+            </fieldset>
+
+            <!-- Question 3 -->
+            <fieldset>
+                <legend>Question 3</legend>
+                <label for="q3">Which HTML element is used to create a hyperlink?</label>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One...</option>
+                    <option value="div">&lt;div&gt;</option>
+                    <option value="a">&lt;a&gt;</option>
+                    <option value="link">&lt;link&gt;</option>
+                </select>
+            </fieldset>
+
+            <!-- Question 4 -->
+            <fieldset>
+                <legend>Question 4</legend>
+                <label for="q4">How many heading levels are available in HTML?</label>
+                <input type="number" id="q4" name="q4" min="1" max="10">
+            </fieldset>
+
+            <!-- Submit -->
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 | HTML & CSS Quiz | Precious Fabiyi</p>
+    </footer>
+</body>
+
+</html>
