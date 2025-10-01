@@ -63,9 +63,8 @@ nav a:hover {
 
 .map iframe {
   width: 100%;
-  height: 300px;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 /* Form */
