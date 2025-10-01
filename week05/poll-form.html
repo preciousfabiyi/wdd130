@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form - WDD130</title>
+    <meta name="description" content="A simple poll form page for WDD130 week05 assignment.">
+    <meta name="author" content="Precious Fabiyi">
+    <link rel="stylesheet" href="styles/poll-form.css"> <!-- optional CSS file -->
+</head>
+
+<body>
+    <header>
+        <h1>Course Poll</h1>
+        <p>We'd love your feedback!</p>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="useremail" name="email" placeholder="Enter your email">
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite internet browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4"
+                    placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali">
+                    </textarea>
+            </fieldset>
+
+
+
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 | Precious Fabiyi | WDD130 Week 05</p>
+    </footer>
+</body>
+
+</html>
