@@ -4,99 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Whitewater Rafting Co.</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us - White Water Rafting</title>
+
+    <!-- Meta Information -->
     <meta name="description"
-        content="Learn more about Whitewater Rafting Co. — our mission, history, and adventures that await you!">
+        content="Contact White Water Rafting Company for reservations, general inquiries, or suggestions. We are here to serve you!">
     <meta name="author" content="Precious Fabiyi">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/raftinglogo.jpg" alt="Whitewater Rafting Co. Logo" width="150">
+        <img src="images/raftinglogo.jpg" alt="White Water Rafting Logo" class="logo" width="150">
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">trips</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting adventure background" width="600">
-            <h1>Whitewater Rafting Co.</h1>
-            <article>
-                <img src="images/happyclient.jpg" alt="Happy client laughing" width="200">
-                <p>
-                    At Whitewater Rafting Co., our mission is to provide thrilling and safe rafting experiences
-                    that bring families and friends closer together. Whether it’s your first adventure or your
-                    fiftieth, we believe in creating unforgettable memories on the river.
-                </p>
-            </article>
-        </div>
-
-        <section class="history">
-            <div class="history-text">
-                <h2>History</h2>
-                <p>Our company was founded over 25 years ago with a simple dream:
-                    to share the excitement of whitewater rafting with the world.
-                    From humble beginnings, we have grown into one of the most trusted
-                    names in adventure tourism.
-                </p>
-                <div class="history-image">
-                    <img src="images/history.jpg" alt="Rafting History" width="200">
-                    <p>
-                        Over the years, we have grown into one of the most trusted rafting companies
-                        in the region. Thousands of families, friends, and adventurers have joined
-                        us on unforgettable trips, and our commitment to safety and fun has never
-                        wavered.
-                    </p>
-
-                </div>
-
-            </div>
+        <!-- Company Information -->
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <address>
+                123 River Rapids Rd<br>
+                Adventure City, CO 80401<br>
+                <a href="tel:+19999999999">+1 (999) 999-9999</a><br>
+                <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+            </address>
         </section>
 
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
+        <!-- Map and Form Section -->
+        <section class="contact-grid">
+            <h2>Get in Touch</h2>
+
+            <!-- Google Maps Embed -->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.735237294403!2d-105.20023202353683!3d39.73923547944943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b87654321abcd%3A0x123456789abcdef!2s123%20River%20Rapids%20Rd%2C%20Adventure%20City%2C%20CO%2080401!5e0!3m2!1sen!2sus!4v1700000000000"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label><br>
+
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..."
+                        required></textarea>
+
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Employee Section -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="profiles">
                 <figure>
-                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/employe1.jpeg" alt="John Doe – Tour Guide">
+                    <figcaption>John Doe – Tour Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/adventure2.jpg" alt="Big Mallard">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="images/employe2.jpeg" alt="Joseph Smith – Customer Support">
+                    <figcaption>Joseph Smith – Customer Support</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure4.jpg" alt="Sunset Rapids">
-                    <figcaption>Sunset Rapids</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure5.jpg" alt="Family Fun Float">
-                    <figcaption>Family Fun Float</figcaption>
+                    <img src="images/employe3.jpg" alt="Precious Johnson – Safety Instructor">
+                    <figcaption>Precious Johnson – Safety Instructor</figcaption>
                 </figure>
             </div>
         </section>
-
-
     </main>
 
     <footer>
-        <p>© 2025 Whitewater Rafting Co. | Precious Fabiyi | WDD 130</p>
+        <p>© 2025 White Water Rafting Company | Precious Fabiyi | WDD 130</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
                 <img src="images/facebooklogo.jpeg" alt="Facebook Icon" width="40">
             </a>
-            <a href="https://linkedin.com">
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
                 <img src="images/linkedin.jpeg" alt="LinkedIn Icon" width="40">
             </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com" target="_blank" rel="noopener">
                 <img src="images/instagram.jpeg" alt="Instagram Icon" width="40">
             </a>
         </nav>
